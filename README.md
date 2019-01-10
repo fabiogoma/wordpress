@@ -1,4 +1,4 @@
-# Autmatically provisioning WordPress
+# Automation on WordPress initial setup
 
 I recently went mad and decided to install Windows 10 on my laptop, which had Fedora Linux since I acquired it back in 2015.
 
