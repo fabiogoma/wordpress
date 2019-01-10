@@ -57,7 +57,7 @@ After the Ansible provisioning, you will get a result similar to the one below:
 Now check on your browser the WordPress url at: http://wordpress.local (This fancy url is possible due to the usage of [Bonjour](https://developer.apple.com/bonjour/))
 
 <p align="center">
-  <img src="images/WordPress-admin.PNG">
+  <img src="images/WordPress-admin.png">
 </p>
 
 From now on, check any WordPress tutorial and follow the steps on how to use it.
