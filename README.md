@@ -10,7 +10,7 @@ Usually, my demos are based on Fedora, Vagrant and Libvirt. This new demo will b
 
 ## Project structure
 
-This project is structured in way to maintain the GoCD YAML pipelines, also some ansible playbooks used for deployment and testing:
+This project is structured as described on the following tree:
 
 ```bash
 $ tree.com .
