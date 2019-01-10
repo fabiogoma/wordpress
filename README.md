@@ -1,7 +1,8 @@
 # Autmatically provisioning WordPress
 
 I recently went mad and decided to install Windows 10 on my laptop, which had Fedora Linux since I acquired it back in 2015.
-I lack of knowledge and experience with Windows, but I decided to build something similiar to my previous demos, which is an automated solution to provision a virtual machine and set it up from the ground up, installing and configuring all needed dependencies to get [WordPress](https://wordpress.org/) up and running.
+
+I lack of knowledge and experience on Windows, but I decided to build something similiar to my previous demos, which is an automated solution to provision a virtual machine and set it up from the ground up, installing and configuring all needed dependencies to get [WordPress](https://wordpress.org/) up and running.
 
 >[WordPress](https://wordpress.org/) is a free and open-source content management system based on PHP and MySQL. Features include a plugin architecture and a template system. It is most associated with blogging but supports other types of web content including more traditional mailing lists and forums, media galleries, and online stores.
 
