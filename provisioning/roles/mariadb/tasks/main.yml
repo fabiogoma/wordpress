@@ -1,0 +1,9 @@
+---
+- name: Import MariaDB install tasks
+  import_tasks: install.yml
+
+- name: Import MariaDB configuration tasks
+  import_tasks: configure.yml
+
+- name: Import MariaDB security tasks
+  import_tasks: security.yml

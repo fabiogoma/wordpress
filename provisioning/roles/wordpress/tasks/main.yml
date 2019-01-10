@@ -1,0 +1,6 @@
+---
+- name: Install WordPress
+  import_tasks: install.yml
+
+- name: Configure WordPress
+  import_tasks: configure.yml

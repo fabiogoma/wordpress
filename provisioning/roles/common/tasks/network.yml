@@ -1,0 +1,30 @@
+
+---
+- name: Set hostname
+  hostname:
+    name: "{{ inventory_hostname }}"
+
+- name: Disable IPV6
+  sysctl:
+    name: net.ipv6.conf.all.disable_ipv6
+    value: 1
+    sysctl_set: true
+
+- name: Configure mDNS
+  lineinfile:
+    path: /etc/avahi/avahi-daemon.conf
+    regexp: '^#allow-interfaces=eth0'
+    line: 'allow-interfaces=eth1'
+    state: present
+    backrefs: true
+
+- name: Start mDNS
+  systemd:
+    state: started
+    enabled: true
+    name: avahi-daemon
+
+# - name: Rebooting ...
+#   command: "sleep 5 && reboot"
+#   async: 1
+#   poll: 0

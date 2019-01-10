@@ -1,0 +1,9 @@
+---
+- name: Import package management tasks
+  import_tasks: packages.yml
+
+- name: Import security tasks
+  import_tasks: security.yml
+
+- name: Import network management tasks
+  import_tasks: network.yml

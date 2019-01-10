@@ -1,0 +1,7 @@
+---
+- name: Enable MariaDB remote access
+  firewalld:
+    service: mysql
+    immediate: true
+    permanent: true
+    state: enabled

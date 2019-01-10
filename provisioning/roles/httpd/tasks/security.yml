@@ -1,0 +1,7 @@
+---
+- name: Enable access to Apache
+  firewalld:
+    service: http
+    immediate: true
+    permanent: true
+    state: enabled

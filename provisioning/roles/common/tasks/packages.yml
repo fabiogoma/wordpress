@@ -1,0 +1,26 @@
+---
+- name: Install EPEL repo
+  yum: 
+    name: epel-release
+    state: present
+
+- name: Install basic packages
+  yum: 
+    name:
+      - nss-mdns
+      - net-tools
+      - telnet
+      - tcpdump
+      - lsof
+      - strace
+      - wget
+      - mlocate
+      - setroubleshoot
+      - setroubleshoot-server
+      - policycoreutils-devel
+    state: present
+
+- name: Update all packages
+  yum: 
+    name: "*"
+    state: latest

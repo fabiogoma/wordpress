@@ -1,0 +1,10 @@
+---
+- name: Provision a wordpress demo host
+  hosts: all
+  become: true
+
+  roles:
+    - common
+    - mariadb
+    - httpd
+    - wordpress

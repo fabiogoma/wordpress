@@ -1,0 +1,11 @@
+---
+- name: Create MariaDB database
+  mysql_db: 
+    name: wordpress
+    state: present
+
+- name: Create MariaDB user
+  mysql_user: 
+    name: wordpress 
+    password: wordpress 
+    priv: '*.*:ALL'

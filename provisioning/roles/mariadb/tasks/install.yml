@@ -1,0 +1,13 @@
+---
+- name: Install MariaDB
+  yum:
+    name:
+      - python2-PyMySQL
+      - mariadb-server
+    state: present
+
+- name: Start MariaDB
+  systemd:
+    name: mariadb
+    state: started
+    enabled: true

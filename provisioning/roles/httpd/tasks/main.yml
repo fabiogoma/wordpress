@@ -1,0 +1,6 @@
+---
+- name: Import Apache installation tasks
+  import_tasks: install.yml
+
+- name: Import Apache security tasks
+  import_tasks: security.yml
